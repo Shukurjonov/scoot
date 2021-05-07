@@ -1,11 +1,31 @@
 umumiy sozlamalar: 
 Start: 10:00
 Finish: 10:20
+20 minut
 
 site-header
 Start: 10:20
 Finish: 10: 50
+30 minut
 
 hero 
 Start: 11:00
-Finish:
+Finish: 11:40
+40minut
+
+order 
+Start: 11:40
+Finish: 12:20
+40 minut
+
+services 
+Start: 12:30
+Finish: 13:40
+70 min
+
+site-footer
+Start: 13:40
+Finish: 14:30
+50 min
+
+Total: 4 soat 10 min
