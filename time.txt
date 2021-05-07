@@ -1,0 +1,11 @@
+umumiy sozlamalar: 
+Start: 10:00
+Finish: 10:20
+
+site-header
+Start: 10:20
+Finish: 10: 50
+
+hero 
+Start: 11:00
+Finish:

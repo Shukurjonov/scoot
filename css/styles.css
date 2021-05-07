@@ -11,6 +11,31 @@
   #FONT-FACE
 \*------------------------------------*/
 
+/* lexend-deca-regular */
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/lexend-deca-v7-latin-regular.woff2') format('woff2'),
+       url('../fonts/lexend-deca-v7-latin-regular.woff') format('woff'); 
+}
+
+
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/space-mono-v6-latin-regular.woff2') format('woff2'), 
+       url('../fonts/space-mono-v6-latin-regular.woff') format('woff'); 
+}
+
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/space-mono-v6-latin-700.woff2') format('woff2'), 
+       url('../fonts/space-mono-v6-latin-700.woff') format('woff'); 
+}
 
 
 /*------------------------------------*\
@@ -41,10 +66,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #222;
+  font-family: var(--fonts);
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--other-text-color);
+  background-color: #ffffff;
 }
 
 img {
@@ -57,6 +83,20 @@ img {
 /*------------------------------------*\
   #HELPER / GLOBAL COMPONENTS
 \*------------------------------------*/
+
+:root {
+  --accent-color: #fcb72b;
+  --accent-color-active: rgba(252, 183, 43, 0.4);
+  --text-color:  #495567;
+  --other-text-color: #939caa;
+  --light-grey: #e5ecf4;
+  --snow:  #f2f5f9;
+  --light-yellow: #fff4df;
+  --fonts: "Space Mono", monospace;
+  --other-font: "Lexend Deca", "Arial", sans-serif;
+}
+
+
 
 /* VISUALLY HIDING CODE */
 
@@ -74,9 +114,97 @@ img {
 /* CONTAINER */
 
 .container {
-  max-width: 1160;
-  padding-left: 30px;
-  padding-right: 30px;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+/* SITE-HEADER */
+.site-header {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 60px;
+}
+
+.logo__img {
+  display: block;
+}
+
+.logo__img:hover {
+  opacity: 0.8;
+}
+
+.logo__img:active {
+  opacity: 0.4;
+}
+
+.site-header__list {
+  display: flex;
+  list-style: none;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  margin-right: auto;
+}
+
+.site-header__item:not(:last-child) {
+  margin-right: 32px;
+}
+
+.site-header__link {
+  text-decoration: none;
+  color: var(--other-text-color);
+  font-weight: bold;
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.site-header__link:hover {
+  color: var(--accent-color);
+}
+
+.site-header__link:active {
+  color: var(--accent-color-active);
+}
+
+
+.btn {
+  width: 180px;
+  padding: 11px 36px;
+  text-decoration: none;
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  border: 3px solid transparent;
+  transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.btn:hover {
+  background: transparent;
+  color: var(--accent-color);
+  border: 3px solid var(--accent-color);
+}
+
+.btn:active {
+  color: #fff;
+  background-color: var(--accent-color);
+  border: 3px solid transparent;
+}
+
+
+/* HERO */
+.hero {
+  padding-top: 152px;
+  padding-bottom: 153px;
+  background-image: url("../img/hero-bg.png");
 }
