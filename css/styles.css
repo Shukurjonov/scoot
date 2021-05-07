@@ -462,7 +462,7 @@ img {
   color: #fff;
   background-image: url("../img/sign-up-bg.png");
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: calc(50% + 300px ) 140px;
 }
 
 
@@ -473,11 +473,12 @@ img {
 } 
 
 .sign-up__heading {
+  margin: 0;
   width: 415px;
   font-weight: bold;
   font-size: 48px;
   line-height: 48px;  
-  letter-spacing: -2.14286px;
+  letter-spacing: -2px;
 }
 
 .download {
@@ -488,7 +489,7 @@ img {
   display: block;
 }
 
-.download__img:not(:last-child) {
+.download__link:not(:last-child) {
   margin-right: 18px;
 }
 
