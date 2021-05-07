@@ -260,6 +260,7 @@ only screen and (                min-resolution: 2dppx) {
   margin-top: 0;
   margin-bottom: 40px;
   position: relative;
+  font-family: var(--other-text-color);
 }
 
 /* ORDER */
