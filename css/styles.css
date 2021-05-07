@@ -248,7 +248,7 @@ img {
   margin-top: 0;
   margin-bottom: 40px;
   position: relative;
-  font-family: var(--other-text-color);
+  font-family: var(--other-font);
 }
 
 /* ORDER */
